@@ -1,0 +1,33 @@
+// Place all the styles related to the Books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.book_image {
+  float: left;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.book_title {
+  font-size: 123.1%;
+  font-weight: bold;
+  color: #800000;
+}
+
+.book_summary {
+  margin-top: 20px;
+  font-size: 85%;
+}
+
+.decoration { font-size: 93%; }
+
+.em {
+  font-size: 123.1%;
+  font-weight: bold;
+  color: red;
+}
+
+.preview {
+  background-color: lightyellow;
+  width: 610px;
+}

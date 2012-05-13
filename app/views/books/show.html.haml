@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @book.title
+%p
+  %b Image url:
+  = @book.image_url
+%p
+  %b Summary:
+  = @book.summary
+
+= link_to 'Edit', edit_book_path(@book)
+\|
+= link_to 'Back', books_path

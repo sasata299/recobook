@@ -1,0 +1,12 @@
+%h1 読んだ本の一覧
+
+- @books.in_groups_of(3, false) do |books|
+  .row
+    - books.each do |book|
+      .span3.well
+        .book_image= link_to image_tag(book.image_url), edit_book_path(book)
+        .book_title= link_to book.title.adjust, edit_book_path(book)
+        .clear
+        .book_summary= book.summary.try(:replace_br).try(:html_safe)
+
+= link_to '読んだ本を登録する', new_book_path

@@ -1,0 +1,14 @@
+%h1 読んだ本を登録する
+
+= form_for @book do |f|
+  .control-group
+    %label アマゾンURL
+    .controls= f.text_field :amazon_url, :class => 'input-xlarge'
+  .control-group
+    %label
+      感想・考察
+      = link_to '強調', 'javascript:void(0)', :id => 'important', :class => 'decoration'
+    .controls= f.text_area :summary
+    .preview
+  = f.submit '登録する', :class => 'btn-large btn-primary'
+  %input{:type => 'button', :value => 'プレビュー', :class => 'btn', :id => 'preview_btn'}
